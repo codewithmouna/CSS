@@ -1,0 +1,226 @@
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+
+    height: 100vh;
+
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+/* HERO CONTENT */
+
+.hero-content {
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+/* HERO HEADING */
+
+.hero h1 {
+    font-size: 60px;
+
+    margin-bottom: 20px;
+}
+
+/* HERO PARAGRAPH */
+
+.hero p {
+    font-size: 20px;
+
+    margin-bottom: 20px;
+}
+
+/* HERO BUTTON */
+
+.hero button {
+
+    padding: 12px 25px;
+
+    border: none;
+
+    background-color: orange;
+
+    color: white;
+
+    font-size: 18px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* BUTTON HOVER */
+
+.hero button:hover {
+    background-color: darkorange;
+}
+
+/* =========================================
+   COMMON SECTION STYLING
+========================================= */
+
+.section {
+
+    padding: 60px 20px;
+
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+/* =========================================
+   1. BACKGROUND COLOR
+========================================= */
+
+.background-color-section {
+
+    background-color: lightblue;
+}
+
+/* =========================================
+   2. BACKGROUND IMAGE
+========================================= */
+
+.background-image-section {
+
+    background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+/* =========================================
+   3. BACKGROUND REPEAT
+========================================= */
+
+.repeat-section {
+
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+
+    background-repeat: repeat;
+}
+
+/* =========================================
+   4. BACKGROUND POSITION
+========================================= */
+
+.position-section {
+
+    background-image: url("https://images.unsplash.com/photo-1493246507139-91e8fad9978e");
+
+    background-repeat: no-repeat;
+
+    background-position: right top;
+
+    background-size: 300px;
+
+    background-color: #ddd;
+}
+
+/* =========================================
+   5. BACKGROUND SIZE
+========================================= */
+
+.size-section {
+
+    background-image: url("https://images.unsplash.com/photo-1519046904884-53103b34b206");
+
+    background-size: cover;
+
+    background-position: center;
+
+    color: white;
+}
+
+/* =========================================
+   6. BACKGROUND ATTACHMENT
+========================================= */
+
+.parallax {
+
+    height: 400px;
+
+    background-image: url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+
+    background-attachment: fixed;
+
+    background-size: cover;
+
+    background-position: center;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+}
+
+/* OVERLAY */
+
+.overlay {
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+/* =========================================
+   7. GRADIENT BACKGROUND
+========================================= */
+
+.gradient-section {
+
+    background: linear-gradient(to right, #ff6b6b, #4ecdc4);
+
+    color: white;
+}
