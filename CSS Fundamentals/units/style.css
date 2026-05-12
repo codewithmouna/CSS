@@ -1,0 +1,175 @@
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    padding: 20px;
+}
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.main-heading {
+    text-align: center;
+
+    color: darkblue;
+
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   COMMON SECTION
+========================================= */
+
+.section {
+    background-color: white;
+
+    padding: 20px;
+
+    margin-bottom: 25px;
+
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   1. PX UNIT
+========================================= */
+
+.px-box {
+    width: 300px;
+
+    height: 100px;
+
+    background-color: lightblue;
+
+    border: 2px solid blue;
+
+    text-align: center;
+
+    line-height: 100px;
+}
+
+/* =========================================
+   2. PERCENTAGE UNIT
+========================================= */
+
+.parent-box {
+    width: 100%;
+
+    background-color: #ddd;
+
+    padding: 20px;
+}
+
+.percent-box {
+    width: 50%;
+
+    background-color: orange;
+
+    padding: 20px;
+}
+
+/* =========================================
+   3. EM UNIT
+========================================= */
+
+.em-section {
+    font-size: 20px;
+}
+
+.em-text {
+    font-size: 2em;
+}
+
+/* =========================================
+   4. REM UNIT
+========================================= */
+
+html {
+    font-size: 16px;
+}
+
+.rem-text {
+    font-size: 2rem;
+}
+
+/* =========================================
+   5. VW UNIT
+========================================= */
+
+.vw-box {
+    width: 50vw;
+
+    background-color: pink;
+
+    padding: 20px;
+}
+
+/* =========================================
+   6. VH UNIT
+========================================= */
+
+.vh-box {
+    height: 30vh;
+
+    background-color: lightgreen;
+
+    text-align: center;
+
+    line-height: 30vh;
+}
+
+/* =========================================
+   7. CH UNIT
+========================================= */
+
+.ch-input {
+    width: 20ch;
+
+    padding: 10px;
+}
+
+/* =========================================
+   8. EX UNIT
+========================================= */
+
+.ex-text {
+    font-size: 5ex;
+
+    color: purple;
+}
+
+/* =========================================
+   9. MIN/MAX WIDTH
+========================================= */
+
+.responsive-box {
+    min-width: 200px;
+
+    max-width: 600px;
+
+    background-color: teal;
+
+    color: white;
+
+    padding: 20px;
+}
