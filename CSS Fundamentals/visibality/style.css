@@ -1,0 +1,301 @@
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    color: #333;
+
+    line-height: 1.6;
+
+    padding: 20px;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: darkblue;
+
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.container {
+    max-width: 1000px;
+
+    margin: auto;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+    background-color: white;
+
+    padding: 25px;
+
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 15px;
+
+    color: darkred;
+}
+
+/* =========================================
+   BOX STYLING
+========================================= */
+
+.box {
+    width: 250px;
+
+    padding: 20px;
+
+    margin: 20px 0;
+
+    text-align: center;
+
+    color: white;
+
+    border-radius: 8px;
+}
+
+/* =========================================
+   visibility: visible
+========================================= */
+
+.visible-box {
+    background-color: green;
+
+    visibility: visible;
+}
+
+/* =========================================
+   visibility: hidden
+========================================= */
+
+.hidden-box {
+    background-color: crimson;
+
+    visibility: hidden;
+}
+
+/* =========================================
+   display: none
+========================================= */
+
+.display-none-box {
+    background-color: black;
+
+    display: none;
+}
+
+/* =========================================
+   NOTE TEXT
+========================================= */
+
+.note {
+    color: gray;
+
+    font-style: italic;
+}
+
+/* =========================================
+   PROFILE CARD PROJECT
+========================================= */
+
+.profile-card {
+    width: 300px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
+    margin-top: 20px;
+}
+
+.profile-card img {
+    width: 100%;
+
+    display: block;
+}
+
+.profile-content {
+    padding: 20px;
+
+    text-align: center;
+}
+
+/* =========================================
+   SOCIAL ICONS HIDDEN INITIALLY
+========================================= */
+
+.social-icons {
+    margin-top: 15px;
+
+    visibility: hidden;
+}
+
+.social-icons a {
+    text-decoration: none;
+
+    color: white;
+
+    background-color: darkblue;
+
+    padding: 8px 12px;
+
+    border-radius: 5px;
+
+    margin: 5px;
+
+    display: inline-block;
+}
+
+/* =========================================
+   SHOW ON HOVER
+========================================= */
+
+.profile-card:hover .social-icons {
+    visibility: visible;
+}
+
+/* =========================================
+   TOOLTIP PROJECT
+========================================= */
+
+.tooltip-container {
+    position: relative;
+
+    display: inline-block;
+
+    background-color: darkblue;
+
+    color: white;
+
+    padding: 10px 15px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* TOOLTIP TEXT */
+
+.tooltip-text {
+    visibility: hidden;
+
+    width: 250px;
+
+    background-color: black;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    position: absolute;
+
+    bottom: 140%;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
+/* SHOW TOOLTIP ON HOVER */
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+}
+
+/* =========================================
+   IMAGE OVERLAY PROJECT
+========================================= */
+
+.image-card {
+    position: relative;
+
+    width: 400px;
+
+    margin-top: 20px;
+}
+
+.image-card img {
+    width: 100%;
+
+    border-radius: 10px;
+
+    display: block;
+}
+
+/* OVERLAY */
+
+.overlay {
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 100%;
+
+    background-color: rgba(0,0,0,0.6);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-radius: 10px;
+
+    visibility: hidden;
+}
+
+/* SHOW OVERLAY */
+
+.image-card:hover .overlay {
+    visibility: visible;
+}

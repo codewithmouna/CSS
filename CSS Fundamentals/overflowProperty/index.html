@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Complete Guide</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <h1>
+            CSS Overflow Property
+        </h1>
+
+        <p>
+            Detailed Examples + Mini Project
+        </p>
+
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="container">
+
+        <!-- OVERFLOW VISIBLE -->
+        <section class="card">
+
+            <h2>1. overflow: visible</h2>
+
+            <p class="info">
+                Content is NOT clipped. It overflows outside the box.
+            </p>
+
+            <div class="box visible-box">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit doloremque modi aliquid magni nesciunt
+                officiis voluptatem laborum dicta adipisci.
+
+            </div>
+
+        </section>
+
+        <!-- OVERFLOW HIDDEN -->
+        <section class="card">
+
+            <h2>2. overflow: hidden</h2>
+
+            <p class="info">
+                Extra content is clipped and hidden.
+            </p>
+
+            <div class="box hidden-box">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit doloremque modi aliquid magni nesciunt
+                officiis voluptatem laborum dicta adipisci.
+
+            </div>
+
+        </section>
+
+        <!-- OVERFLOW SCROLL -->
+        <section class="card">
+
+            <h2>3. overflow: scroll</h2>
+
+            <p class="info">
+                Scrollbars always appear.
+            </p>
+
+            <div class="box scroll-box">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit doloremque modi aliquid magni nesciunt
+                officiis voluptatem laborum dicta adipisci.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quia doloremque accusantium praesentium temporibus
+                dignissimos molestiae.
+
+            </div>
+
+        </section>
+
+        <!-- OVERFLOW AUTO -->
+        <section class="card">
+
+            <h2>4. overflow: auto</h2>
+
+            <p class="info">
+                Scrollbars appear only when needed.
+            </p>
+
+            <div class="box auto-box">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reprehenderit doloremque modi aliquid magni nesciunt
+                officiis voluptatem laborum dicta adipisci.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quia doloremque accusantium praesentium temporibus
+                dignissimos molestiae.
+
+            </div>
+
+        </section>
+
+        <!-- OVERFLOW X -->
+        <section class="card">
+
+            <h2>5. overflow-x</h2>
+
+            <p class="info">
+                Horizontal scrolling example.
+            </p>
+
+            <div class="horizontal-scroll">
+
+                <div class="wide-content">
+
+                    THIS IS A VERY LONG CONTENT THAT CREATES
+                    HORIZONTAL OVERFLOW SCROLLING EFFECT.
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- OVERFLOW Y -->
+        <section class="card">
+
+            <h2>6. overflow-y</h2>
+
+            <p class="info">
+                Vertical scrolling example.
+            </p>
+
+            <div class="vertical-scroll">
+
+                <p>Item 1</p>
+                <p>Item 2</p>
+                <p>Item 3</p>
+                <p>Item 4</p>
+                <p>Item 5</p>
+                <p>Item 6</p>
+                <p>Item 7</p>
+                <p>Item 8</p>
+                <p>Item 9</p>
+                <p>Item 10</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- MINI PROJECT -->
+    <section class="project-section">
+
+        <h2>
+            Mini Project: Chat Application UI
+        </h2>
+
+        <div class="chat-container">
+
+            <!-- CHAT HEADER -->
+            <div class="chat-header">
+                Chat Messages
+            </div>
+
+            <!-- CHAT BODY -->
+            <div class="chat-body">
+
+                <div class="message left">
+                    Hello! How are you?
+                </div>
+
+                <div class="message right">
+                    I'm good. Learning CSS Overflow!
+                </div>
+
+                <div class="message left">
+                    Great! Overflow is useful in chat apps.
+                </div>
+
+                <div class="message right">
+                    Yes! Messages scroll vertically.
+                </div>
+
+                <div class="message left">
+                    Keep practicing CSS fundamentals.
+                </div>
+
+                <div class="message right">
+                    Sure! I'm building projects daily.
+                </div>
+
+                <div class="message left">
+                    Awesome work!
+                </div>
+
+                <div class="message right">
+                    Thank you!
+                </div>
+
+            </div>
+
+            <!-- CHAT INPUT -->
+            <div class="chat-input">
+
+                <input type="text" placeholder="Type message...">
+
+                <button>
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

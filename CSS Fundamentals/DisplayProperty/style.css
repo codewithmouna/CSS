@@ -1,0 +1,339 @@
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    padding: 20px;
+}
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.main-heading {
+    text-align: center;
+
+    color: darkblue;
+
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   COMMON SECTION STYLING
+========================================= */
+
+.section {
+    background-color: white;
+
+    padding: 20px;
+
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+
+    color: darkred;
+}
+
+.section p {
+    margin-top: 15px;
+}
+
+/* =========================================
+   1. DISPLAY BLOCK
+========================================= */
+
+.block-example {
+
+    display: block;
+
+    background-color: lightblue;
+
+    padding: 20px;
+
+    margin-bottom: 10px;
+
+    border: 2px solid blue;
+}
+
+/*
+BLOCK ELEMENT FEATURES:
+- Takes full width
+- Starts on new line
+- Width & height work
+*/
+
+/* =========================================
+   2. DISPLAY INLINE
+========================================= */
+
+.inline-example {
+
+    display: inline;
+
+    background-color: pink;
+
+    padding: 10px;
+
+    border: 2px solid red;
+}
+
+/*
+INLINE ELEMENT FEATURES:
+- Stays in same line
+- Width & height do not work properly
+- Only takes required content width
+*/
+
+/* =========================================
+   3. DISPLAY INLINE-BLOCK
+========================================= */
+
+.inline-block-example {
+
+    display: inline-block;
+
+    width: 150px;
+
+    height: 100px;
+
+    background-color: lightgreen;
+
+    margin-right: 10px;
+
+    text-align: center;
+
+    line-height: 100px;
+
+    border: 2px solid green;
+}
+
+/*
+INLINE-BLOCK FEATURES:
+- Stays in same line
+- Width & height work
+*/
+
+/* =========================================
+   4. DISPLAY NONE
+========================================= */
+
+.visible-box {
+
+    background-color: orange;
+
+    padding: 20px;
+
+    margin-bottom: 10px;
+}
+
+.hidden-box {
+
+    display: none;
+
+    background-color: red;
+
+    padding: 20px;
+}
+
+/*
+DISPLAY NONE:
+- Completely removes element
+- Takes no space
+*/
+
+/* =========================================
+   5. DISPLAY FLEX
+========================================= */
+
+.flex-container {
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+}
+
+.flex-item {
+
+    background-color: purple;
+
+    color: white;
+
+    padding: 30px;
+
+    width: 150px;
+
+    text-align: center;
+
+    border-radius: 10px;
+}
+
+/*
+FLEX FEATURES:
+- Makes items flexible
+- Aligns items horizontally
+- Easy responsive layouts
+*/
+
+/* =========================================
+   MINI PROJECT SECTION
+========================================= */
+
+.project-section {
+
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+}
+
+.project-heading {
+
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: darkgreen;
+}
+
+/* =========================================
+   PRODUCT CONTAINER
+========================================= */
+
+.product-container {
+
+    display: flex;
+
+    gap: 20px;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+/*
+display:flex
+- Makes cards appear side by side
+
+flex-wrap:wrap
+- Moves cards to next line on small screens
+*/
+
+/* =========================================
+   PRODUCT CARD
+========================================= */
+
+.product-card {
+
+    background-color: #fafafa;
+
+    width: 300px;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+
+    text-align: center;
+
+    padding-bottom: 20px;
+}
+
+/* =========================================
+   CARD IMAGE
+========================================= */
+
+.product-card img {
+
+    width: 100%;
+
+    display: block;
+}
+
+/*
+display:block removes bottom image spacing
+*/
+
+/* =========================================
+   CARD TEXT
+========================================= */
+
+.product-card h3 {
+
+    margin-top: 15px;
+}
+
+.product-card p {
+
+    padding: 15px;
+}
+
+/* =========================================
+   BUTTON
+========================================= */
+
+.product-card button {
+
+    background-color: darkblue;
+
+    color: white;
+
+    border: none;
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.product-card button:hover {
+
+    background-color: black;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .flex-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .product-container {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+}
