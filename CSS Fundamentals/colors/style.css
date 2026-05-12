@@ -1,0 +1,188 @@
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* =========================================
+   MAIN HEADING
+========================================= */
+
+.main-heading {
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   COMMON SECTION STYLING
+========================================= */
+
+.section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   1. COLOR NAME
+========================================= */
+
+.color-name {
+    color: red;
+}
+
+/* =========================================
+   2. HEX COLORS
+========================================= */
+
+.hex-color {
+    color: #ff6600;
+}
+
+/* =========================================
+   3. RGB COLORS
+========================================= */
+
+.rgb-color {
+    color: rgb(0, 128, 255);
+}
+
+/* =========================================
+   4. RGBA COLORS
+========================================= */
+
+.rgba-box {
+    background-color: rgba(255, 0, 0, 0.5);
+
+    padding: 20px;
+
+    border-radius: 8px;
+}
+
+/* =========================================
+   5. HSL COLORS
+========================================= */
+
+.hsl-color {
+    color: hsl(120, 100%, 30%);
+}
+
+/* =========================================
+   6. HSLA COLORS
+========================================= */
+
+.hsla-box {
+    background-color: hsla(240, 100%, 50%, 0.3);
+
+    padding: 20px;
+
+    border-radius: 8px;
+}
+
+/* =========================================
+   7. BACKGROUND COLORS
+========================================= */
+
+.background-section {
+    background-color: lightblue;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   8. BORDER COLORS
+========================================= */
+
+.border-box {
+    border: 4px solid green;
+
+    padding: 20px;
+
+    border-radius: 8px;
+}
+
+/* =========================================
+   9. TEXT + BACKGROUND COMBINATION
+========================================= */
+
+.dark-section {
+    background-color: #222;
+
+    color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+}
+
+/* =========================================
+   10. BUTTON COLORS
+========================================= */
+
+button {
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    margin-right: 10px;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+/* SUCCESS BUTTON */
+
+.btn-success {
+    background-color: green;
+}
+
+/* DANGER BUTTON */
+
+.btn-danger {
+    background-color: red;
+}
+
+/* WARNING BUTTON */
+
+.btn-warning {
+    background-color: orange;
+}
+
+/* =========================================
+   BUTTON HOVER EFFECT
+========================================= */
+
+button:hover {
+    opacity: 0.8;
+}
