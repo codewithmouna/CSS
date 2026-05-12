@@ -1,0 +1,142 @@
+/* =========================================
+           1. UNIVERSAL SELECTOR
+           Selects ALL elements
+        ========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================================
+           BODY STYLING
+        ========================================== */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+section {
+  background-color: white;
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: darkblue;
+}
+
+p {
+  margin: 10px 0;
+}
+
+/* =========================================
+           2. ELEMENT SELECTOR
+           Selects all elements of same tag
+        ========================================== */
+
+h1 {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+           3. CLASS SELECTOR
+           Selects elements using class=""
+        ========================================== */
+
+.blue-text {
+  color: blue;
+  font-size: 20px;
+}
+
+/* =========================================
+           4. ID SELECTOR
+           Selects element using id=""
+        ========================================== */
+
+#special-heading {
+  background-color: yellow;
+  padding: 10px;
+}
+
+/* =========================================
+           5. GROUP SELECTOR
+           Styles multiple elements together
+        ========================================== */
+
+h3,
+h4 {
+  color: green;
+}
+
+/* =========================================
+           6. DESCENDANT SELECTOR
+           Selects elements inside another element
+        ========================================== */
+
+.container p {
+  color: purple;
+}
+
+/* =========================================
+           7. CHILD SELECTOR
+           Selects direct child only
+        ========================================== */
+
+.parent > p {
+  background-color: lightblue;
+  padding: 5px;
+}
+
+/* =========================================
+           8. ADJACENT SIBLING SELECTOR
+           Selects immediate next sibling
+        ========================================== */
+
+h5 + p {
+  color: orange;
+  font-weight: bold;
+}
+
+/* =========================================
+           9. GENERAL SIBLING SELECTOR
+           Selects all siblings after element
+        ========================================== */
+
+h6 ~ p {
+  color: brown;
+}
+
+/* =========================================
+           10. ATTRIBUTE SELECTOR
+           Selects element with specific attribute
+        ========================================== */
+
+input[type="text"] {
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+/* =========================================
+           11. HOVER PSEUDO CLASS
+        ========================================== */
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* =========================================
+           12. FIRST-CHILD PSEUDO CLASS
+        ========================================== */
+
+ul li:first-child {
+  color: red;
+}
