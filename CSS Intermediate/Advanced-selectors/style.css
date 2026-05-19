@@ -1,0 +1,289 @@
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+  font-family: Arial, sans-serif;
+
+  background-color: #f4f4f4;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  background-color: darkblue;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 30px;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  background-color: #222;
+
+  padding: 15px;
+
+  text-align: center;
+}
+
+.navbar a {
+  color: white;
+
+  text-decoration: none;
+
+  margin: 0 15px;
+
+  font-size: 18px;
+}
+
+/* PSEUDO CLASS :hover */
+
+.navbar a:hover {
+  color: yellow;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+  width: 90%;
+
+  margin: 40px auto;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+  background-color: white;
+
+  padding: 25px;
+
+  margin-bottom: 30px;
+
+  border-radius: 10px;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+
+  color: crimson;
+}
+
+/* =========================================
+   DESCENDANT SELECTOR
+   Selects ALL p inside .descendant
+========================================= */
+
+.descendant p {
+  color: blue;
+
+  margin-bottom: 10px;
+}
+
+/* =========================================
+   CHILD SELECTOR
+   Selects DIRECT child only
+========================================= */
+
+.parent > p {
+  color: green;
+
+  font-weight: bold;
+}
+
+/* =========================================
+   ADJACENT SIBLING
+   Selects immediate next sibling
+========================================= */
+
+h3 + p {
+  color: orange;
+
+  font-size: 20px;
+}
+
+/* =========================================
+   GENERAL SIBLING
+   Selects ALL siblings after h4
+========================================= */
+
+h4 ~ p {
+  color: purple;
+
+  margin-top: 10px;
+}
+
+/* =========================================
+   ATTRIBUTE SELECTORS
+========================================= */
+
+/* TEXT INPUT */
+
+input[type="text"] {
+  border: 2px solid blue;
+}
+
+/* EMAIL INPUT */
+
+input[type="email"] {
+  border: 2px solid green;
+}
+
+/* ALL INPUTS */
+
+input {
+  display: block;
+
+  width: 300px;
+
+  padding: 12px;
+
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+}
+
+/* TARGET BLANK LINKS */
+
+a[target="_blank"] {
+  color: red;
+
+  text-decoration: none;
+
+  font-weight: bold;
+}
+
+/* =========================================
+   PSEUDO CLASSES
+========================================= */
+
+/* BUTTON HOVER */
+
+button {
+  padding: 12px 25px;
+
+  border: none;
+
+  background-color: darkblue;
+
+  color: white;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: crimson;
+}
+
+/* BUTTON ACTIVE */
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* FIRST CHILD */
+
+ul li:first-child {
+  color: red;
+}
+
+/* LAST CHILD */
+
+ul li:last-child {
+  color: blue;
+}
+
+/* NTH CHILD */
+
+ul li:nth-child(2) {
+  color: green;
+}
+
+/* =========================================
+   PSEUDO ELEMENTS
+========================================= */
+
+.pseudo-text {
+  font-size: 18px;
+
+  position: relative;
+}
+
+/* FIRST LETTER */
+
+.pseudo-text::first-letter {
+  font-size: 40px;
+
+  color: crimson;
+
+  font-weight: bold;
+}
+
+/* FIRST LINE */
+
+.pseudo-text::first-line {
+  color: darkblue;
+}
+
+/* BEFORE */
+
+.pseudo-text::before {
+  content: "★ ";
+
+  color: gold;
+
+  font-size: 25px;
+}
+
+/* AFTER */
+
+.pseudo-text::after {
+  content: " ✔";
+
+  color: green;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  background-color: #222;
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px;
+
+  margin-top: 50px;
+}

@@ -1,0 +1,389 @@
+/* =========================================
+   CSS VARIABLES
+========================================= */
+
+:root {
+  /* COLORS */
+
+  --primary-color: #2563eb;
+
+  --secondary-color: #9333ea;
+
+  --accent-color: #e11d48;
+
+  --light-color: #ffffff;
+
+  --dark-color: #222222;
+
+  --gray-color: #f4f4f4;
+
+  /* FONT */
+
+  --heading-font: Arial, sans-serif;
+
+  --body-font: Verdana, sans-serif;
+
+  /* SPACING */
+
+  --padding-large: 30px;
+
+  --padding-medium: 20px;
+
+  --border-radius: 15px;
+
+  /* SHADOW */
+
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+
+  /* TRANSITION */
+
+  --transition: 0.3s;
+}
+
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+  font-family: var(--body-font);
+
+  background-color: var(--gray-color);
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+  color: var(--light-color);
+
+  text-align: center;
+
+  padding: 50px 20px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+
+  font-family: var(--heading-font);
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+  width: 90%;
+
+  margin: 40px auto;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+  background-color: var(--light-color);
+
+  padding: var(--padding-large);
+
+  margin-bottom: 30px;
+
+  border-radius: var(--border-radius);
+
+  box-shadow: var(--box-shadow);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+
+  color: var(--accent-color);
+}
+
+/* =========================================
+   CODE BOX
+========================================= */
+
+.code-box {
+  margin-top: 20px;
+
+  background-color: #222;
+
+  color: white;
+
+  padding: 20px;
+
+  border-radius: 10px;
+
+  font-family: monospace;
+}
+
+/* =========================================
+   COLOR VARIABLES
+========================================= */
+
+.color-container {
+  display: flex;
+
+  gap: 20px;
+
+  flex-wrap: wrap;
+}
+
+.color-box {
+  width: 200px;
+
+  height: 120px;
+
+  border-radius: var(--border-radius);
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  color: white;
+
+  font-size: 20px;
+
+  font-weight: bold;
+}
+
+.primary-box {
+  background-color: var(--primary-color);
+}
+
+.secondary-box {
+  background-color: var(--secondary-color);
+}
+
+.accent-box {
+  background-color: var(--accent-color);
+}
+
+/* =========================================
+   SPACING VARIABLES
+========================================= */
+
+.spacing-box {
+  padding: var(--padding-large);
+
+  border-radius: var(--border-radius);
+
+  background-color: var(--primary-color);
+
+  color: white;
+}
+
+/* =========================================
+   FONT VARIABLES
+========================================= */
+
+.heading-font {
+  font-family: var(--heading-font);
+
+  font-size: 40px;
+
+  margin-bottom: 15px;
+
+  color: var(--secondary-color);
+}
+
+.body-font {
+  font-family: var(--body-font);
+
+  font-size: 18px;
+}
+
+/* =========================================
+   LOCAL VARIABLES
+========================================= */
+
+.local-section {
+  --local-bg: #111827;
+
+  --local-btn: #10b981;
+
+  background-color: var(--local-bg);
+
+  color: white;
+}
+
+.local-section button {
+  margin-top: 20px;
+
+  padding: 12px 25px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background-color: var(--local-btn);
+
+  color: white;
+
+  cursor: pointer;
+}
+
+/* =========================================
+   PROJECT SECTION
+========================================= */
+
+.project-section {
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+.project-section h2 {
+  margin-bottom: 40px;
+
+  color: var(--primary-color);
+}
+
+/* =========================================
+   THEME CONTAINER
+========================================= */
+
+.theme-container {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 30px;
+
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   THEME CARD
+========================================= */
+
+.theme-card {
+  width: 320px;
+
+  padding: 30px;
+
+  border-radius: var(--border-radius);
+
+  box-shadow: var(--box-shadow);
+
+  transition: var(--transition);
+}
+
+.theme-card:hover {
+  transform: translateY(-10px);
+}
+
+.theme-card h3 {
+  margin-bottom: 20px;
+
+  font-size: 28px;
+}
+
+.theme-card p {
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+
+.theme-card button {
+  padding: 12px 25px;
+
+  border: none;
+
+  border-radius: 30px;
+
+  cursor: pointer;
+
+  transition: var(--transition);
+}
+
+/* =========================================
+   LIGHT THEME
+========================================= */
+
+.light-theme {
+  background-color: white;
+
+  color: black;
+}
+
+.light-theme button {
+  background-color: var(--primary-color);
+
+  color: white;
+}
+
+/* =========================================
+   DARK THEME
+========================================= */
+
+.dark-theme {
+  background-color: var(--dark-color);
+
+  color: white;
+}
+
+.dark-theme button {
+  background-color: var(--accent-color);
+
+  color: white;
+}
+
+/* =========================================
+   GRADIENT THEME
+========================================= */
+
+.gradient-theme {
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+  color: white;
+}
+
+.gradient-theme button {
+  background-color: white;
+
+  color: var(--primary-color);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  background-color: var(--dark-color);
+
+  color: white;
+
+  text-align: center;
+
+  padding: 20px;
+
+  margin-top: 50px;
+}

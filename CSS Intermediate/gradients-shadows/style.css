@@ -1,0 +1,322 @@
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f4f4;
+
+    line-height: 1.6;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+    background: linear-gradient(to right, #4b6cb7, #182848);
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+    width: 90%;
+
+    margin: 40px auto;
+}
+
+/* =========================================
+   CARD
+========================================= */
+
+.card {
+    background-color: white;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 20px;
+
+    color: crimson;
+}
+
+/* =========================================
+   GRADIENT BOX
+========================================= */
+
+.gradient-box {
+    height: 180px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+/* =========================================
+   LINEAR GRADIENT
+========================================= */
+
+.linear-gradient {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+/* =========================================
+   RADIAL GRADIENT
+========================================= */
+
+.radial-gradient {
+    background: radial-gradient(circle, #36d1dc, #5b86e5);
+}
+
+/* =========================================
+   DIAGONAL GRADIENT
+========================================= */
+
+.diagonal-gradient {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+/* =========================================
+   TEXT SHADOW
+========================================= */
+
+.shadow-text {
+    font-size: 50px;
+
+    text-align: center;
+
+    color: darkblue;
+
+    text-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+}
+
+/* =========================================
+   BOX SHADOW
+========================================= */
+
+.shadow-card {
+    padding: 30px;
+
+    border-radius: 15px;
+
+    background-color: white;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+
+    transition: 0.4s;
+}
+
+.shadow-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+}
+
+.shadow-card h3 {
+    margin-bottom: 15px;
+
+    color: darkblue;
+}
+
+/* =========================================
+   MULTIPLE SHADOWS
+========================================= */
+
+.multi-shadow-box {
+    height: 150px;
+
+    border-radius: 15px;
+
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 4px 10px rgba(0,0,0,0.2),
+        0 8px 20px rgba(0,0,0,0.2),
+        0 12px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================================
+   PROJECT SECTION
+========================================= */
+
+.project-section {
+    padding: 60px 20px;
+
+    text-align: center;
+}
+
+.project-section h2 {
+    margin-bottom: 40px;
+
+    color: darkblue;
+}
+
+/* =========================================
+   PRICING CONTAINER
+========================================= */
+
+.pricing-container {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+/* =========================================
+   PRICING CARD
+========================================= */
+
+.pricing-card {
+    width: 300px;
+
+    padding: 40px 30px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(to bottom right, #ffffff, #f0f0f0);
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+    transition: 0.4s;
+}
+
+.pricing-card:hover {
+    transform: translateY(-15px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+/* FEATURED CARD */
+
+.featured {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+
+    color: white;
+
+    transform: scale(1.05);
+}
+
+/* CARD HEADING */
+
+.pricing-card h3 {
+    font-size: 30px;
+
+    margin-bottom: 15px;
+}
+
+/* PRICE */
+
+.pricing-card h1 {
+    margin-bottom: 20px;
+
+    font-size: 48px;
+}
+
+/* FEATURES LIST */
+
+.pricing-card ul {
+    list-style: none;
+
+    margin-bottom: 30px;
+}
+
+.pricing-card ul li {
+    margin-bottom: 15px;
+}
+
+/* BUTTON */
+
+.pricing-card button {
+    padding: 12px 25px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: crimson;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.pricing-card button:hover {
+    background-color: black;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 50px;
+}
